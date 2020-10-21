@@ -76,6 +76,7 @@
 
 .message-input:focus {
   outline: none;
+  background-color: rgb(245, 245, 245);
 }
 
 .submit-button {
@@ -98,6 +99,10 @@
   transform: translateY(1px);
 }
 
+.submit-button:focus {
+  outline: 0
+}
+
 .time-stamp {
   color: white;
   float: right;
@@ -116,7 +121,7 @@
 }
 
 .header-logo {
-  width: 300px;
+  width: 250px;
 }
 
 .sign-out-button {
@@ -129,4 +134,8 @@
 
 .sign-out-button:hover {
   opacity: 0.7;
+}
+
+.sign-out-button:focus {
+  outline: 0
 }

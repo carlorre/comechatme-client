@@ -16,11 +16,12 @@
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: rgb(222, 222, 222);
+  background-color: rgb(228, 228, 228);
 }
 
 .login-input:focus {
   outline: none;
+  background-color: rgb(199, 199, 199);
 }
 
 .login-button {
@@ -31,4 +32,8 @@
   color: white;
   box-shadow: 2px 2px 10px rgb(82, 82, 82);
   padding: 10px;
+}
+.login-button:hover { 
+  opacity: 0.8;
+  cursor: pointer;
 }

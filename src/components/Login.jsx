@@ -15,7 +15,7 @@ const Login = () => {
       setError('Please enter a username');
       return;
     }
-    axios.get(`http://localhost:5000/?username=${username}`)
+    axios.get(`https://comechatme.herokuapp.com/?username=${username}`)
       .then((res) => {
         if (res.status === 200) {
           dispatch(newUser(username));

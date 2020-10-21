@@ -16,7 +16,7 @@ const Chat = () => {
   useEffect(() => {
     const random = Math.floor(Math.random() * 22);
     const randomColor = colors[random];
-    socketRef.current = io('http://localhost:5000');
+    socketRef.current = io('https://comechatme.herokuapp.com/');
     socketRef.current.emit('newuser', { username, color: randomColor });
     socketRef.current.on('welcome user', (msg) => setMessages((prevMessages) => [...prevMessages, msg]));
     socketRef.current.on('inform chat', (msg) => setMessages((prevMessages) => [...prevMessages, msg]));

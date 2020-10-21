@@ -1,0 +1,132 @@
+.chat-room {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  box-shadow: 0px 3px 10px #666;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.outer-message-container {
+  display: flex;
+  margin: 2px;
+}
+
+.message-out {
+  justify-content: flex-end;
+}
+
+.broadcast {
+  justify-content: center;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.username {
+  font-weight: bolder;
+  letter-spacing: 0.8px;
+}
+
+.inner-message-container {
+  word-wrap: break-word;
+  border-radius: 10px;
+  margin: 1px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(74, 74, 74);
+  max-width: 70%;
+}
+
+.message-out-background {
+  background-color: rgb(16, 183, 255);
+}
+
+.hidden {
+  display: none;
+}
+
+.broadcast-background {
+  background-color: rgb(122, 125, 125);
+}
+
+.message-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(220, 220, 220);
+  height: 50px;
+}
+
+.message-input {
+  font-size: 1.2em;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  width: 70%;
+}
+
+.message-input:focus {
+  outline: none;
+}
+
+.submit-button {
+  background-color: rgb(16, 183, 255);
+  border-radius: 50%;
+  font-size: 1.5em;
+  border: none;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 1px #666;
+  height: 40px;
+  width: 40px;
+}
+
+.submit-button:hover {
+  opacity: 0.8;
+}
+
+.submit-button:active {
+  box-shadow: 0px 0px 1px #666;
+  transform: translateY(1px);
+}
+
+.time-stamp {
+  color: white;
+  float: right;
+  font-size: small;
+  float: inline-end;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.header {
+  background-color: rgb(16, 183, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-logo {
+  width: 300px;
+}
+
+.sign-out-button {
+  font-size: 30px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(69, 69, 69);
+  border: none;
+  border-radius: 10px;
+}
+
+.sign-out-button:hover {
+  opacity: 0.7;
+}
